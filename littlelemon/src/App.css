@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+
+#navbar {
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navbar .navbar-collapse {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#navbar .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navbar .nav-link {
+  margin: 0 10px; /* スペースを調整 */
+}
+
+#hero_container {
+  display: flex;
+  align-items: center;
+  background-color: #495E57;
+  color: #FFFFFF;
+  height: 300px;
+  padding-left: 20px;
+}
+
+#hero_container p:nth-of-type(1) {
+  color: #F4CE14;
+  font-size: 2rem;
+}
+#hero_container p:nth-of-type(2) {
+  font-size: 1.5rem;
+}
+#hero_container button {
+  background-color: #F4CE14;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#hero_image {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #FFFFFF;
+  font-size: 0.8rem;
+}
+
+footer HStack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer VStack {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
 }
 
-.App-link {
-  color: #61dafb;
+footer ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  justify-content: left; /* Center the list items */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer ul li {
+  margin: 5px 0; /* Add some spacing between the list items */
+  display: flex;
+  font-size: 0.6rem;
+  color: #495E57;
 }
+
+footer ul li a {
+  text-decoration: none; /* Remove default link underline */
+  display: flex; /* Make the link area larger */
+  color: #495E57;
+}
+

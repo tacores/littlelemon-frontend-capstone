@@ -4,7 +4,7 @@
 npm init react-app littlelemon
 
 ## start server
-cd littlelemon
+cd littlelemon  
 npm start
 
 

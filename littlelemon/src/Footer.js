@@ -1,4 +1,4 @@
-import { Navbar, Nav, Container, Stack, Image} from 'react-bootstrap';
+import { Stack, Image} from 'react-bootstrap';
 
 const Footer = () => {
     return (
@@ -8,10 +8,10 @@ const Footer = () => {
                 <Stack direction="vertical">
                     <p>Navigation</p>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="booking">Reservations</a></li>
                         <li><a href="onlineorder.html">Online Order</a></li>
                         <li><a href="login.html">Login</a></li>
                     </ul>
@@ -21,7 +21,7 @@ const Footer = () => {
                     <ul>
                         <li>Address</li>
                         <li>012-3456-7890</li>
-                        <li>contact@littlelemon.com</li>
+                        <li>yfujita@littlelemon.com</li>
                     </ul>
                 </Stack>
                 <Stack direction="vertical">

@@ -1,50 +1,136 @@
 
+.inner_container {
+  width: 70% !important; 
+  margin:  20px auto 20px auto !important; /* 上、左右、自動、下 */
+}
+.inner_container h1 {
+  font-size:xx-large;
+}
+.booking_container {
+  width: 40% !important; 
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background-color: #EDEFEE;
+  border-radius: 20px;
+}
+
+#hero_outer_container {
+  background-color: #495E57;
+  color: white;
+}
+
+.highlight-card {
+  width: 270px;
+  background-color: #EDEFEE;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: 30px;
+}
+
+.highlight-card h2 {
+  font-size: larger;
+  width: auto;
+  margin: 5px;
+}
+.highlight-card span {
+  width: auto;
+  font-weight: bold;
+  margin: 5px;
+}
+.highlight-card p {
+  margin: 5px;
+}
+#card-price {
+  width: auto;
+  color: #EE9972;
+  font-weight: bold;
+}
+.highlight-image {
+  width: 270px;
+  height: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#order_icon {
+  width: auto;
+  height: 20px;
+}
+
 #navbar {
   display: flex;
   justify-content: center;
 }
-
-#navbar .navbar-collapse {
-  display: flex;
-  justify-content: center;
+#navbar img {
+  margin-right: 20px;
 }
-
-#navbar .navbar-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-#navbar .nav-link {
-  margin: 0 10px; /* スペースを調整 */
-}
-
-#hero_container {
-  display: flex;
-  align-items: center;
-  background-color: #495E57;
-  color: #FFFFFF;
-  height: 300px;
-  padding-left: 20px;
-}
-
-#hero_container p:nth-of-type(1) {
-  color: #F4CE14;
-  font-size: 2rem;
-}
-#hero_container p:nth-of-type(2) {
-  font-size: 1.5rem;
-}
-#hero_container button {
-  background-color: #F4CE14;
-  border-radius: 10px;
+#navbar a {
+  color: #495E57;
   font-weight: bold;
 }
 
+#hero_container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 10px;
+}
+
+#hero_container h1 {
+  color: #F4CE14;
+  font-size: 2rem;
+}
+#hero_container p:nth-of-type(1) {
+  font-size: 1.5rem;
+}
+#lemon-button {
+  background-color: #F4CE14;
+  color: #000000;
+  border-radius: 10px;
+  font-weight: bold;
+}
 #hero_image {
   width: 280px;
   height: 280px;
   border-radius: 10px;
+}
+
+#testimonials_title {
+  width: auto;
+  font-size: x-large;
+}
+.rating-card {
+  background-color: #EDEFEE;
+  margin: 10px;
+}
+.rating-card span {
+  width: auto;
+  font-weight: bold;
+}
+.rating-card p {
+  font-size: smaller;
+}
+
+#rating_photo {
+  width: auto;
+  height: 48px;
+}
+
+#about_image {
+  width: auto;
+  height: 200px;
+}
+#about_image:nth-of-type(2) {
+  position: relative;
+  top: -100px;
+  left: 200px;
+  z-index: -10;
+  margin-bottom: -180px;
 }
 
 footer {
@@ -56,23 +142,14 @@ footer {
   font-size: 0.8rem;
 }
 
-footer HStack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer VStack {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+footer p {
+  margin-bottom: 5px;
 }
 
 footer ul {
   list-style: none; /* Remove default list bullets */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
-  justify-content: left; /* Center the list items */
 }
 
 footer ul li {
